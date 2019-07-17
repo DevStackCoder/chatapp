@@ -1,9 +1,9 @@
-const express = require('express')
+import express from 'express'
 
 const app = express()
 
 app.get('/ping', (req, res)=>{
-    res.send('pong')
+    res.send('ping')
 })
 
 app.listen(80, ()=>{
